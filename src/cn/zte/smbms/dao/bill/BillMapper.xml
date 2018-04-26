@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zte.smbms.dao.bill.BillMapper">
+	<!-- <resultMap type="Bill" id="billProviderList">
+		<result property="billCode" column="billCode"/>
+		<result property="productName" column="productName"/>
+		<result property="totalPrice" column="totalPrice"/>
+		<result property="isPayment" column="isPayment"/>
+		<result property="creationDate" column="creationDate"/>
+		<association property="provider" javaType="Provider">
+			<result property="proName" column="proName"/>
+		</association>
+	</resultMap>
+	<select id="billList" resultMap="billProviderList" parameterType="Bill">
+		SELECT b.billCode,b.productName,b.totalPrice,b.isPayment,b.creationDate,p.proName
+		 FROM smbms_bill b,smbms_provider p 
+		WHERE b.providerId=p.id AND b.productName LIKE CONCAT ('%',#{productName},'%') 
+		AND b.providerId = #{providerId} AND b.isPayment=#{isPayment}
+	</select> -->
+</mapper>
